@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>XSS Demo - ระบบคอมเมนต์ที่มีช่องโหว่</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>แสดงความคิดเห็น</h1>
+        <div id="comments-container"></div>
+        <hr>
+        <h2>โพสต์คอมเมนต์ใหม่</h2>
+        <form id="comment-form">
+            <input type="text" id="name-input" placeholder="ชื่อ" required>
+            <textarea id="comment-input" placeholder="ความคิดเห็น" required></textarea>
+            <button type="submit">โพสต์</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
